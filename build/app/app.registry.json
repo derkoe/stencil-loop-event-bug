@@ -1,0 +1,12 @@
+{
+  "namespace": "App",
+  "fsNamespace": "app",
+  "loader": "../app.js",
+  "core": "app.hk6mrluk.js",
+  "corePolyfilled": "app.ywy1bosk.js",
+  "components": {
+    "simple-loop": {
+      "$": "9nsvrfkr"
+    }
+  }
+}
