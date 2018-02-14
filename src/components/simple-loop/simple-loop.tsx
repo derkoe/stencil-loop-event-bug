@@ -26,11 +26,11 @@ export class SimpleLoop {
     );
   }
 
-  renderItem(item: Item) {
+  renderItem(item) {
     return (
       <li>
         {item.label}
-        <button onClick={event => this.deleteItem(item)}>Delete</button>
+        <button onClick={() => this.deleteItem(item)}>Delete</button>
       </li>
     );
   }
@@ -40,7 +40,7 @@ export class SimpleLoop {
     log.textContent = `Deleting: ${itemToDelete.id} / ${itemToDelete.label}`;
     this.el.appendChild(log);
 
-    this.items = this.items.filter(item => item.id !== itemToDelete.id);
+    this.items = this.items.filter(item => item.id !== itemToDelete.id).map(item => ({...item}));
   }
 }
 

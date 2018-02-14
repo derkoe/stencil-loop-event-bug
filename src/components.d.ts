@@ -5,12 +5,21 @@
  */
 
 
+declare global {
+  interface HTMLStencilElement extends HTMLElement {
+    componentOnReady(): Promise<this>;
+    componentOnReady(done: (ele?: this) => void): void;
+  }
+}
+
+
+
 import {
   SimpleLoop as SimpleLoop
 } from './components/simple-loop/simple-loop';
 
 declare global {
-  interface HTMLSimpleLoopElement extends SimpleLoop, HTMLElement {
+  interface HTMLSimpleLoopElement extends SimpleLoop, HTMLStencilElement {
   }
   var HTMLSimpleLoopElement: {
     prototype: HTMLSimpleLoopElement;

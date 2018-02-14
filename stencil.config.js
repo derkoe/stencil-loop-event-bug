@@ -2,6 +2,7 @@ exports.config = {
   bundles: [
     { components: ['simple-loop'] },
   ],
+  serviceWorker: false
 };
 
 exports.devServer = {
