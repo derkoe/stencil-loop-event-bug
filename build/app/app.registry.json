@@ -2,11 +2,11 @@
   "namespace": "App",
   "fsNamespace": "app",
   "loader": "../app.js",
-  "core": "app.hk6mrluk.js",
-  "corePolyfilled": "app.ywy1bosk.js",
+  "core": "app.xq7yfzgs.js",
+  "corePolyfilled": "app.aje7lm0m.js",
   "components": {
     "simple-loop": {
-      "$": "9nsvrfkr"
+      "$": "zfkivxf7"
     }
   }
 }
